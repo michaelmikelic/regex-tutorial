@@ -1,6 +1,6 @@
-# Title (replace with your title)
+# What is Regex? A Quick Tutorial
 
-Introductory paragraph (replace this with your text)
+Regex stands for Regular Expressions.  They are special strings that represent a pattern that can be matched in a search operation.  They are importnant tools used in many computer applications, such as in programming languages live Java Script and perl.  They also can be used to text processing tools like sed, grep, and vim.
 
 ## Summary
 
