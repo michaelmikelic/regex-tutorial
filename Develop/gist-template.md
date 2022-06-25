@@ -54,9 +54,38 @@ And then it has to end with this string:
 ```
 
 ### Quantifiers
-Quantifiers specify how many instances of a character, group, or of a character class that must be present in that input for a match to be found.  
+Quantifiers specify how many instances of a character, group, or of a character class that must be present in that input for a match to be found.  For example, if we used the following string `abc+` then this will match any string `ab` followed by at least one `c`.
+
+So if we review our email string above:
+
+```
+^([a-z0-9_\.-]+)
+```
+It would return a match for any string that starts with `z-z`, `0-9`, `_/.`.  The quantifier `+` means that it has to contain at least one of these in order to have a match.  
 
 ### OR Operator
+
+You can use Regular Expression Operators to match characters in text strings.  
+
+If you wich to use the OR Operator or `|` lets use the following string to match a hex code:
+
+```
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+```
+This is Regex for marching a hex code that uses the OR Operator.  This will match starting with `#` and then followed by one of the following:
+
+```
+[a-f0-9]{6}
+```
+This would match a 6 character long string that contains a combination of letters and numbers.
+
+`|` OR Operator
+
+```
+[a-f0-9]{3}
+```
+Will match a 3 character long string that contains letters and numbers as well. 
+
 
 ### Character Classes
 
