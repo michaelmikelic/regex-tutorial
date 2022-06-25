@@ -14,8 +14,6 @@ Matching an Email –
 /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ```
 
-
-
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -31,6 +29,9 @@ Matching an Email –
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
+```
+====================
+```
 
 ### Anchors
 The Anchor starts and ends the Regular Expression or the beginning of the string and the end of the string.  They are regex tokens that do not match any characters but that say or asset something about the strong of the matching process.  
@@ -89,9 +90,38 @@ Will match a 3 character long string that contains letters and numbers as well.
 
 ### Character Classes
 
+Character Classes are a set of characters enclosed within square brackets.  They specify the characters that will successfully match a single character from a given input string.  
+
+In our email example above, the string within any of the `[]` brackets are Chracter Classes such as:
+```
+[a-z0-9_\.-]
+``` 
+or
+```
+[a-z\.]
+```
+
 ### Flags
 
+A regular expression can consist of a pattern and optional flags: g, i, m, u, s, y.  Without flags and special symbols the search by a regexp is the same as a substring search.  
+
+In any reglaur expression you could use the following flags:
+- `g` - matches the pattern multiple times
+- `i` - makes the regex case insensitive
+- `m` - enables mul-line mode
+- `u` - enables support for unicode
+- `s` - short for single line
+
+There are no flags used in our matching email example for this tutorial.  A regular expression typically comes like follows:
+
+```
+/regex/
+```
+Where above the forward-slashes denote where the regular expression starts and ends.  A flag may be used after the forward-slash to give more guidelines for our matching.  
+
+
 ### Grouping and Capturing
+
 
 ### Bracket Expressions
 
