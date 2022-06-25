@@ -47,4 +47,4 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Author
 
 Written by Michael Mikelic
-[Github]https://michaelmikelic.github.io/regex-tutorial/
+[Github](https://michaelmikelic.github.io/regex-tutorial/)
