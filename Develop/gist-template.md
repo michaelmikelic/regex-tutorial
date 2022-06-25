@@ -4,7 +4,9 @@ Regex stands for Regular Expressions.  They are special strings that represent a
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+
 
 ## Table of Contents
 
