@@ -4,7 +4,11 @@ Regex stands for Regular Expressions.  They are special strings that represent a
 
 ## Summary
 
-Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+Matching an Email – 
+
+```
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+```
 
 
 
@@ -49,4 +53,5 @@ Matching an Email – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 ## Author
 
 Written by Michael Mikelic
+</br>
 [Github](https://michaelmikelic.github.io/regex-tutorial/)
