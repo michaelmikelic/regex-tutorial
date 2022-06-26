@@ -147,13 +147,18 @@ From our email example above, this would simply be the characters within the squ
 
 
 ### Greedy and Lazy Match
-
+Greedy quantifiers will match their preceding elements as much as possible to return the highest possible match while non-greedy quantifiers will match as little as possible to return the lowest number of possible macthes.  We talk of greedy for non-greedy (i.e. lazy) quantifiers as providing us with the longest or shortest match.  
 
 ### Boundaries
 
+A Word Boundry is a position between `/w` and `/W` or at the begining or end of a string if it begins or ends with a work character.  
+
 ### Back-references
 
+Back References are regular expression commands which refer to a previous part of the matched regular expression.  Back References atre specified with a back-slash and a single digit such as, `/1`.  The part of the regular expression they refer to is called a subexpression and is denoted with parentheses.  
+
 ### Look-ahead and Look-behind
+Lookahead is positive and negtative (i.e. lookbehind).  They define patterns that only match when they are followed or not followed by another pattern.  
 
 ## Author
 
