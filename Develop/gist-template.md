@@ -122,10 +122,32 @@ Where above the forward-slashes denote where the regular expression starts and e
 
 ### Grouping and Capturing
 
+Capturing groups are a way to treat multiple characters as a single unit.  They are created by placing the characters to be grouped inside a set of parentheses.  For example, the regular expression "cat" cretaes a single group that contains the letters "c", "a", "t".  
+
+Our email example has 3 groups all of which are in parentheses.  They are here below:
+```
+([a-z0-9_\.-]+)
+```
+```
+([\da-z\.-]+)
+```
+```
+([a-z\.]{2,6})
+```
+
 
 ### Bracket Expressions
 
+Bracket Expressions is an expression enclosed in square brackets `[]`.  It matches a specific set of single characters and may match a specific set of multi-chracter collating elements, based upon the non-empty set of list expressions contained in the bracket expression.  
+
+From our email example above, this would simply be the characters within the square brackets.  Here is one of them below:
+```
+[a-z\.]
+```
+
+
 ### Greedy and Lazy Match
+
 
 ### Boundaries
 
